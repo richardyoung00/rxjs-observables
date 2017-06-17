@@ -1,6 +1,10 @@
 // Import React
 import React from "react";
 
+import 'prismjs';
+import '../assets/prism.css';
+import '../assets/prism-jsx.min';
+
 // Import Spectacle Core tags
 import {
   BlockQuote,
@@ -42,7 +46,7 @@ const theme = createTheme({
   tertiary: "#03A9FC",
   quartenary: "#CECECE"
 }, {
-  primary: "Montserrat",
+  primary: "Helvetica",
   secondary: "Helvetica"
 });
 
