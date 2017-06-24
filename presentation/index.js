@@ -26,6 +26,11 @@ import createTheme from "spectacle/lib/themes/default";
 
 import CodeSlide from "spectacle-code-slide";
 import { titleSlide } from './1_title/title';
+import { aboutMeSlide } from './2_aboutMe/aboutMe';
+import { whatIsRxJsSlide } from './3_whatIsRxJs/whatIsRxJs';
+import { buttonClickJs } from './4_buttonClickJs/buttonClickJs';
+import { buttonClickRx } from './5_buttonClickRx/buttonClickRx';
+import { buttonClickRxThrottle } from './5_buttonClickRxThrottle/buttonClickRxThrottle';
 
 // Require CSS
 require("normalize.css");
@@ -52,6 +57,7 @@ const theme = createTheme({
 });
 
 export default class Presentation extends React.Component {
+
     render() {
         return (
             <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
@@ -60,12 +66,20 @@ export default class Presentation extends React.Component {
                 {titleSlide()}
 
                 {/*about me*/}
-
-                {/*outline*/}
+                {aboutMeSlide()}
 
                 {/*what is rxjs and observables*/}
+                {whatIsRxJsSlide()}
 
-                {/*basic how to use them*/}
+                {/*button click example*/}
+                {buttonClickJs()}
+                {buttonClickRx()}
+                {buttonClickRxThrottle()}
+
+                {/*Async example*/}
+
+                {/*difference between promises and observables*/}
+                {/*anatomy of observable*/}
 
                 {/*how to do cancellation*/}
 

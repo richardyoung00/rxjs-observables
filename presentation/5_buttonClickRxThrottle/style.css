@@ -1,0 +1,24 @@
+.buttonClickJs h1 {
+    border: none !important;
+    color: black !important;
+}
+
+.buttonClickJs pre {
+    padding-top: 25% !important;
+}
+.buttonClickJs code {
+    padding-left: 4em !important;
+    text-indent: -4em !important;
+}
+
+.buttonClickJs > div {
+    border: 2px solid black;
+    bottom: 20% !important;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes scroll{
+    0% {left:800px;}
+    100% {left:-800px;}
+}

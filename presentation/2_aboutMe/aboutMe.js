@@ -11,11 +11,11 @@ import {
     Text,
 } from "spectacle";
 
-export function titleSlide() {
+export function aboutMeSlide() {
     return (
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary" notes={title_notes}>
-            <Heading size={2} textColor="primary">Next level async with RxJS and Observables</Heading>
-            <br/>
+            <Heading size={5} textColor="tertiary">Richard Young</Heading>
+            <Heading size={5} textColor="tertiary">BNRY Digital</Heading>
         </Slide>
     );
 }
