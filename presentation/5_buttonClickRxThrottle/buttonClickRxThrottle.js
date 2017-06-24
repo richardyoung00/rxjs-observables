@@ -18,7 +18,7 @@ import CodeSlide from "spectacle-code-slide";
 export function buttonClickRxThrottle() {
     return (
         <CodeSlide
-            className='buttonClickJs'
+            className='buttonClickJsThrottle'
             transition={['fade']}
             lang="js"
             align='flex-start flex-start'
