@@ -27,10 +27,15 @@ import createTheme from "spectacle/lib/themes/default";
 import CodeSlide from "spectacle-code-slide";
 import { titleSlide } from './1_title/title';
 import { aboutMeSlide } from './2_aboutMe/aboutMe';
-import { whatIsRxJsSlide } from './3_whatIsRxJs/whatIsRxJs';
-import { buttonClickJs } from './4_buttonClickJs/buttonClickJs';
-import { buttonClickRx } from './5_buttonClickRx/buttonClickRx';
-import { buttonClickRxThrottle } from './5_buttonClickRxThrottle/buttonClickRxThrottle';
+import { examplesOfAsync } from './3_examplesOfAsync/examplesOfAsync';
+import { promises } from './4_promises/promises';
+import { promisesForAsync } from './5_promisesForAsync/promisesForAsync';
+import { whatIsRxJsSlide } from './6_whatIsRxJs/whatIsRxJs';
+import { whatAreObservables } from './7_whatAreObservables/whatAreObservables';
+import { buttonClickJs } from './8_buttonClickJs/buttonClickJs';
+import { buttonClickRx } from './9_buttonClickRx/buttonClickRx';
+import { buttonClickRxThrottle } from './10_buttonClickRxThrottle/buttonClickRxThrottle';
+import { componentPlayground } from './ComponentPlayground/componentPlayground';
 
 // Require CSS
 require("normalize.css");
@@ -68,17 +73,32 @@ export default class Presentation extends React.Component {
                 {/*about me*/}
                 {aboutMeSlide()}
 
+                {/*examples of async*/}
+                {examplesOfAsync()}
+
+                {/*promises*/}
+                {promises()}
+
+                {/*promises for async*/}
+                {promisesForAsync()}
+
                 {/*what is rxjs and observables*/}
                 {whatIsRxJsSlide()}
+
+                {/*what are observables*/}
+                {whatAreObservables()}
 
                 {/*button click example*/}
                 {buttonClickJs()}
                 {buttonClickRx()}
                 {buttonClickRxThrottle()}
+                {/*unsubscribe*/}
+
+                {componentPlayground()}
 
                 {/*Async example*/}
 
-                {/*difference between promises and observables*/}
+
                 {/*anatomy of observable*/}
 
                 {/*how to do cancellation*/}
