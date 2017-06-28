@@ -1,0 +1,40 @@
+/*
+/api/users
+[
+    {name: 'Jenny'},
+    {name: 'Bob'},
+    {name: 'Dave'}
+]
+*/
+
+$.ajax('/api/users')
+    .then(
+        (data) => console.log(data),
+        (err) => console.log('error', err)
+    )
+
+const users$ = Rx.Observable.ajax('/api/users')
+    .map((data) => data.response)
+    .catch((err) => Rx.Observable.of(err))
+    .finally(() => console.log('Always do this'));
+
+users$.subscribe(
+     users => console.log(users),
+     () => console.log('Uncaught error'),
+     () => console.log('Stream completed')
+ )
+
+const users$ = Rx.Observable.ajax('/api/users')
+    .mergeMap(e => e.response)
+
+users$.subscribe(
+     (user) => console.log(user)
+ )
+
+ const users$ = Rx.Observable.ajax('/api/users')
+     .mergeMap(e => e.response)
+     .take(2)
+
+ users$.subscribe(
+      (user) => console.log(user)
+  )

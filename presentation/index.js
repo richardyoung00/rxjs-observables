@@ -36,6 +36,7 @@ import { buttonClickJs } from './8_buttonClickJs/buttonClickJs';
 import { buttonClickRx } from './9_buttonClickRx/buttonClickRx';
 import { buttonClickRxThrottle } from './10_buttonClickRxThrottle/buttonClickRxThrottle';
 import { componentPlayground } from './ComponentPlayground/componentPlayground';
+import { asyncPromise } from './11_asyncPromise/asyncPromise';
 
 // Require CSS
 require("normalize.css");
@@ -94,9 +95,8 @@ export default class Presentation extends React.Component {
                 {buttonClickRxThrottle()}
                 {/*unsubscribe*/}
 
-                {componentPlayground()}
-
                 {/*Async example*/}
+                {asyncPromise()}
 
 
                 {/*anatomy of observable*/}
