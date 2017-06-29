@@ -1,0 +1,21 @@
+.retry h1 {
+    border: none !important;
+    color: black !important;
+    font-size: 2em !important;
+    margin: 0 !important;
+}
+
+.retry pre {
+    padding-top: 15% !important;
+}
+.retry code {
+    padding-left: 4em !important;
+    text-indent: -4em !important;
+}
+
+.retry > div {
+  background-color: white !important;
+    color: black !important;
+    border: 2px solid black;
+    bottom: 20% !important;
+}

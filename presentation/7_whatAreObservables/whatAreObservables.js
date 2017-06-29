@@ -16,6 +16,7 @@ export function whatAreObservables() {
         <Slide transition={["fade"]} notes={title_notes}>
             <Heading size={5}>Observables</Heading>
             <List>
+                <ListItem>Observable pattern</ListItem>
                 <ListItem>Streams or sets</ListItem>
                 <ListItem>Any number of events (even zero)</ListItem>
                 <ListItem>Over any amount of time</ListItem>

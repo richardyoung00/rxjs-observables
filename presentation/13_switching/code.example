@@ -1,0 +1,6 @@
+const data$ = Rx.Observable.ajax('/api/data')
+    .switchMap(e => e.response)
+
+data$.subscribe(
+     (data) => document.getElementById("result").innerHTML = data;
+ )

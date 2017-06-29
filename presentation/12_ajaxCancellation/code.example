@@ -1,0 +1,20 @@
+const cancelBtn = document.querySelector('button');
+const cancel$ = Observable.fromEvent(cancelBtn, 'click');
+
+const data$ = Rx.Observable.ajax('/api/data')
+    .map(e => e.response)
+    .takeUntil(cancel$)
+
+data$.subscribe(
+     (data) => console.log(data)
+ )
+
+ /* With Timeout */
+ const data$ = Rx.Observable.ajax('/api/data')
+     .map(e => e.response)
+     .takeUntil(cancel$)
+     .timeout(5000)
+
+ data$.subscribe(
+      (data) => console.log(data)
+  )

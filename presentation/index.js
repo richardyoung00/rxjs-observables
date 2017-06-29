@@ -37,6 +37,9 @@ import { buttonClickRx } from './9_buttonClickRx/buttonClickRx';
 import { buttonClickRxThrottle } from './10_buttonClickRxThrottle/buttonClickRxThrottle';
 import { componentPlayground } from './ComponentPlayground/componentPlayground';
 import { asyncPromise } from './11_asyncPromise/asyncPromise';
+import { ajaxCancellation } from './12_ajaxCancellation/ajaxCancellation';
+import { switching } from './13_switching/switching';
+import { retry } from './14_retry/retry';
 
 // Require CSS
 require("normalize.css");
@@ -98,61 +101,25 @@ export default class Presentation extends React.Component {
                 {/*Async example*/}
                 {asyncPromise()}
 
+                {/*why you need cancellation - example*/}
 
-                {/*anatomy of observable*/}
+                {/*how to do cancellation in RxJS*/}
+                {ajaxCancellation()}
 
-                {/*how to do cancellation*/}
+                {/*switching fail example with gif*/}
+
+                {/*switching example*/}
+                {switching()}
+
+                {/*switching success example with gif*/}
 
                 {/*how to retry*/}
+                {retry()}
 
-                <CodeSlide
-                    transition={[]}
-                    lang="js"
-                    code={require("raw-loader!./code.example")}
-                    ranges={[
-                        {loc: [0, 270], title: "Walking through some code"},
-                        {loc: [0, 1], title: "The Beginning"},
-                        {loc: [1, 2]},
-                        {loc: [1, 2], note: "Heres a note!"},
-                        {loc: [2, 3]},
-                        {loc: [4, 7]},
-                        {loc: [8, 10]}
-                        // ...
-                    ]}
-                />
-                <Slide transition={["zoom"]} bgColor="primary" notes="some notes">
-                    <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-                        Spectacle Boilerplate
-                    </Heading>
-                    <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-                        open the presentation/index.js file to get started
-                    </Text>
-                </Slide>
-                <Slide transition={["fade"]} bgColor="tertiary">
-                    <Heading size={6} textColor="primary" caps>Typography</Heading>
-                    <Heading size={1} textColor="secondary">Heading 1</Heading>
-                    <Heading size={2} textColor="secondary">Heading 2</Heading>
-                    <Heading size={3} textColor="secondary">Heading 3</Heading>
-                    <Heading size={4} textColor="secondary">Heading 4</Heading>
-                    <Heading size={5} textColor="secondary">Heading 5</Heading>
-                    <Text size={6} textColor="secondary">Standard text</Text>
-                </Slide>
-                <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
-                    <Heading size={6} textColor="secondary" caps>Standard List</Heading>
-                    <List>
-                        <ListItem>Item 1</ListItem>
-                        <ListItem>Item 2</ListItem>
-                        <ListItem>Item 3</ListItem>
-                        <ListItem>Item 4</ListItem>
-                    </List>
-                </Slide>
-                <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-                    <BlockQuote>
-                        <Quote>Example Quote</Quote>
-                        <Cite>Author</Cite>
-                    </BlockQuote>
-                </Slide>
+                {/*make own observable*/}
+
             </Deck>
         );
     }
+
 }
