@@ -11,11 +11,11 @@ import {
     Text,
 } from "spectacle";
 
-export function aboutMeSlide() {
+export function throttleImplementation() {
     return (
         <Slide transition={["fade"]} notes={title_notes}>
-            <Heading size={5} textColor="header">Richard Young</Heading>
-            <Heading size={5} textColor="header">BNRY Digital</Heading>
+            <Heading size={5} textColor="header">Throttle</Heading>
+
         </Slide>
     );
 }

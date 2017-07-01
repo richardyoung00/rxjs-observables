@@ -14,7 +14,7 @@ import {
 export function whatIsRxJsSlide() {
     return (
         <Slide transition={["fade"]} notes={title_notes}>
-            <Heading size={5}>What is RxJS?</Heading>
+            <Heading size={5} textColor="header">What is RxJS?</Heading>
             <List>
                 <ListItem>Reactive extensions for JS</ListItem>
                 <ListItem>Async data streams and observables</ListItem>

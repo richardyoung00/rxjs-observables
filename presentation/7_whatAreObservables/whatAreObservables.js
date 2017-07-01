@@ -14,10 +14,10 @@ import {
 export function whatAreObservables() {
     return (
         <Slide transition={["fade"]} notes={title_notes}>
-            <Heading size={5}>Observables</Heading>
+            <Heading size={5} textColor="header">Observables</Heading>
             <List>
-                <ListItem>Observable pattern</ListItem>
-                <ListItem>Streams or sets</ListItem>
+                <ListItem>Observable design pattern</ListItem>
+                <ListItem>Operates on streams or sets</ListItem>
                 <ListItem>Any number of events (even zero)</ListItem>
                 <ListItem>Over any amount of time</ListItem>
                 <ListItem>Lazy</ListItem>

@@ -1,0 +1,25 @@
+.codeSlide h1 {
+    border: none !important;
+    color: #14fc00 !important;
+    font-size: 3.19rem !important;
+    top: 0px !important;
+}
+
+.codeSlide pre {
+    padding-top: 20% !important;
+}
+.codeSlide code {
+    padding-left: 4em !important;
+    text-indent: -4em !important;
+}
+
+.codeSlide > div {
+    background-color: white !important;
+    color: black !important;
+    border: 2px solid black;
+    white-space: pre-wrap;
+}
+
+.codeSlide.noLineNumbers .token.comment {
+    visibility: hidden;
+}

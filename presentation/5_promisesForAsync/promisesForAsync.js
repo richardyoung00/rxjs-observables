@@ -15,7 +15,7 @@ import {
 export function promisesForAsync() {
     return (
         <Slide transition={["fade"]} notes={title_notes}>
-            <Heading size={5}>Promises for Async</Heading>
+            <Heading size={5} textColor="header">Promises for Async</Heading>
             <List>
                 <ListItem>DOM events - multiple values</ListItem>
                 <ListItem>AJAX - 1 value</ListItem>

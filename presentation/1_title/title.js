@@ -13,8 +13,8 @@ import {
 
 export function titleSlide() {
     return (
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary" notes={title_notes}>
-            <Heading size={2} textColor="primary">Next level async with RxJS and Observables</Heading>
+        <Slide transition={["fade"]} notes={title_notes}>
+            <Heading size={2} textColor="header">Next level async with RxJS and Observables</Heading>
             <br/>
         </Slide>
     );

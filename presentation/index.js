@@ -2,7 +2,8 @@
 import React from "react";
 
 import 'prismjs';
-import '../assets/prism.css';
+// import '../assets/prism.css';
+import '../assets/prism-hopscotch.css';
 import '../assets/prism-jsx.min';
 
 // Import Spectacle Core tags
@@ -24,7 +25,6 @@ import preloader from "spectacle/lib/utils/preloader";
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
 
-import CodeSlide from "spectacle-code-slide";
 import { titleSlide } from './1_title/title';
 import { aboutMeSlide } from './2_aboutMe/aboutMe';
 import { examplesOfAsync } from './3_examplesOfAsync/examplesOfAsync';
@@ -32,18 +32,21 @@ import { promises } from './4_promises/promises';
 import { promisesForAsync } from './5_promisesForAsync/promisesForAsync';
 import { whatIsRxJsSlide } from './6_whatIsRxJs/whatIsRxJs';
 import { whatAreObservables } from './7_whatAreObservables/whatAreObservables';
-import { buttonClickJs } from './8_buttonClickJs/buttonClickJs';
-import { buttonClickRx } from './9_buttonClickRx/buttonClickRx';
-import { buttonClickRxThrottle } from './10_buttonClickRxThrottle/buttonClickRxThrottle';
-import { componentPlayground } from './ComponentPlayground/componentPlayground';
+import { buttonClick } from './8_buttonClick/buttonClick';
 import { asyncPromise } from './11_asyncPromise/asyncPromise';
 import { ajaxCancellation } from './12_ajaxCancellation/ajaxCancellation';
 import { switching } from './13_switching/switching';
 import { retry } from './14_retry/retry';
+import { throttleImplementation } from './throttleImplementation/throttleImplementation';
+import { chosenOne } from './ChosenOne/chosenOne';
+import { cancelImplementation } from './Cancelmplementation/cancelImplementation';
 
 // Require CSS
 require("normalize.css");
 require("spectacle/lib/themes/default/index.css");
+
+// Code slide css
+require("./codeSlide.css");
 
 
 const images = {
@@ -56,9 +59,9 @@ const images = {
 preloader(images);
 
 const theme = createTheme({
-    primary: "#FFFFFF",
-    secondary: "#1F2022",
-    tertiary: "#14fc00",
+    primary: "#000",
+    secondary: "#fff",
+    header: "#14fc00",
     quartenary: "#CECECE"
 }, {
     primary: "Helvetica",
@@ -80,12 +83,6 @@ export default class Presentation extends React.Component {
                 {/*examples of async*/}
                 {examplesOfAsync()}
 
-                {/*promises*/}
-                {promises()}
-
-                {/*promises for async*/}
-                {promisesForAsync()}
-
                 {/*what is rxjs and observables*/}
                 {whatIsRxJsSlide()}
 
@@ -93,10 +90,19 @@ export default class Presentation extends React.Component {
                 {whatAreObservables()}
 
                 {/*button click example*/}
-                {buttonClickJs()}
-                {buttonClickRx()}
-                {buttonClickRxThrottle()}
-                {/*unsubscribe*/}
+                {buttonClick()}
+
+                {/*throttle implementation example*/}
+                {throttleImplementation()}
+
+                {/*promises*/}
+                {promises()}
+
+                {/*promises for async*/}
+                {promisesForAsync()}
+
+                {/*chosen one*/}
+                {chosenOne()}
 
                 {/*Async example*/}
                 {asyncPromise()}
@@ -106,15 +112,17 @@ export default class Presentation extends React.Component {
                 {/*how to do cancellation in RxJS*/}
                 {ajaxCancellation()}
 
-                {/*switching fail example with gif*/}
-
-                {/*switching example*/}
-                {switching()}
-
-                {/*switching success example with gif*/}
-
                 {/*how to retry*/}
                 {retry()}
+
+                {cancelImplementation()}
+
+                {/*switching fail implementation*/}
+
+                {/*switching code*/}
+                {switching()}
+
+                {/*switching success implementation*/}
 
                 {/*make own observable*/}
 

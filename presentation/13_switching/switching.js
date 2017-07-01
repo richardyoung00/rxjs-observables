@@ -10,7 +10,6 @@ import {
     Slide,
     Text,
 } from "spectacle";
-import './style.css'
 
 import CodeSlide from "spectacle-code-slide";
 
@@ -18,7 +17,7 @@ import CodeSlide from "spectacle-code-slide";
 export function switching() {
     return (
         <CodeSlide
-            className='switching'
+            className='codeSlide'
             transition={['fade']}
             lang="js"
             align='flex-start flex-start'

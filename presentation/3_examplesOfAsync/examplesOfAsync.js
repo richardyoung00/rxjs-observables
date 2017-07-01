@@ -14,7 +14,7 @@ import {
 export function examplesOfAsync() {
     return (
         <Slide transition={["fade"]} notes={title_notes}>
-            <Heading size={5}>Async</Heading>
+            <Heading size={5} textColor="header">Examples of async</Heading>
             <List>
                 <ListItem>DOM events</ListItem>
                 <ListItem>AJAX</ListItem>
