@@ -15,19 +15,17 @@ import './style.css'
 import CodeSlide from "spectacle-code-slide";
 
 
-export function retry() {
+export function switchingPromises() {
     return (
         <CodeSlide
-            className='codeSlide'
+            className='codeSlide switchingPromises'
             transition={['fade']}
             lang="js"
             align='flex-start flex-start'
             code={require("raw-loader!./code.example")}
             notes={notes}
             ranges={[
-                {loc: [0, 7], title: "Retry"},
-                {loc: [8, 17]},
-                {loc: [18, 28]},
+                {loc: [0, 15], title: "Multiple promises"},
             ]}
         />
     );

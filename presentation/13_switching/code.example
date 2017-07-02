@@ -1,6 +1,6 @@
 const data$ = Rx.Observable.ajax('/api/data')
-    .switchMap(e => e.response)
+  .switchMap(data => data.response)
 
 data$.subscribe(
-     (data) => document.getElementById("result").innerHTML = data;
- )
+  (data) => document.querySelector('#result').innerHTML = data
+)

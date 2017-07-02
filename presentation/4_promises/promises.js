@@ -21,7 +21,7 @@ export function promises() {
                     <ListItem>Eventual completion (or failure) of an asynchronous operation</ListItem>
                     <ListItem>Executed immediately</ListItem>
                     <ListItem>Single value</ListItem>
-                    <ListItem>Immutable and cannot be cancellable</ListItem>
+                    <ListItem>Immutable and cannot be cancelled</ListItem>
                 </List>
             </Appear>
         </Slide>

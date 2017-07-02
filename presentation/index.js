@@ -40,6 +40,9 @@ import { retry } from './14_retry/retry';
 import { throttleImplementation } from './throttleImplementation/throttleImplementation';
 import { chosenOne } from './ChosenOne/chosenOne';
 import { cancelImplementation } from './Cancelmplementation/cancelImplementation';
+import { switchingFaillmplementation } from './SwitchingFaillmplementation/switchingFaillmplementation';
+import { switchingSuccesslmplementation } from './SwitchingSuccesslmplementation/switchingSuccesslmplementation';
+import { switchingPromises } from './SwitchingPromises/switchingPromises';
 
 // Require CSS
 require("normalize.css");
@@ -74,57 +77,61 @@ export default class Presentation extends React.Component {
         return (
             <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
 
-                {/*title*/}
+                {/* 0 - title*/}
                 {titleSlide()}
 
-                {/*about me*/}
+                {/* 1 - about me*/}
                 {aboutMeSlide()}
 
-                {/*examples of async*/}
+                {/* 2 - examples of async*/}
                 {examplesOfAsync()}
 
-                {/*what is rxjs and observables*/}
+                {/* 3 - what is rxjs and observables*/}
                 {whatIsRxJsSlide()}
 
-                {/*what are observables*/}
+                {/* 4 - what are observables*/}
                 {whatAreObservables()}
 
-                {/*button click example*/}
+                {/* 5 - button click example*/}
                 {buttonClick()}
 
-                {/*throttle implementation example*/}
+                {/* 6 - throttle implementation example*/}
                 {throttleImplementation()}
 
-                {/*promises*/}
+                {/* 7 - promises*/}
                 {promises()}
 
-                {/*promises for async*/}
+                {/* 8 - promises for async*/}
                 {promisesForAsync()}
 
-                {/*chosen one*/}
+                {/* 9 - chosen one*/}
                 {chosenOne()}
 
-                {/*Async example*/}
+                {/* 10 - Async example*/}
                 {asyncPromise()}
 
-                {/*why you need cancellation - example*/}
-
-                {/*how to do cancellation in RxJS*/}
-                {ajaxCancellation()}
-
-                {/*how to retry*/}
+                {/*11 - how to retry*/}
                 {retry()}
 
-                {cancelImplementation()}
+                {/* 12 - how to do cancellation in RxJS*/}
+                {ajaxCancellation()}
 
-                {/*switching fail implementation*/}
+                {/* 13 - switching with promises*/}
+                {switchingPromises()}
+
+                {/* 13 - switching fail implementation*/}
+                {switchingFaillmplementation()}
 
                 {/*switching code*/}
                 {switching()}
 
                 {/*switching success implementation*/}
+                {switchingSuccesslmplementation()}
+
 
                 {/*make own observable*/}
+
+                {/*thanks*/}
 
             </Deck>
         );

@@ -1,0 +1,13 @@
+var getJediButton = document.querySelector('#jediButton');
+getJediButton.addEventListener('click',
+  $.ajax('/api/jedi').then(
+    (data) => document.querySelector('#result').innerHTML = data
+  )
+);
+
+var getSithButton = document.querySelector('#sithButton');
+getSithButton.addEventListener('click',
+  $.ajax('/api/sith').then(
+    (data) => document.querySelector('#result').innerHTML = data
+  )
+);
