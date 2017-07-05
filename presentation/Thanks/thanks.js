@@ -1,6 +1,5 @@
 import React from "react";
 import {
-    ComponentPlayground,
     BlockQuote,
     Cite,
     Deck,
@@ -10,19 +9,15 @@ import {
     Quote,
     Slide,
     Text,
+    Code
 } from "spectacle";
+import './style.css'
 
-
-export const componentPlayground = () => {
-
+export function thanks() {
     return (
-    <Slide>
-        <ComponentPlayground
-            code ={`Some code`}
-
-
-        />
-    </Slide>
+        <Slide transition={["fade"]} notes={title_notes}>
+            <Heading size={3} textColor="header">thanks</Heading>
+        </Slide>
     );
 }
 

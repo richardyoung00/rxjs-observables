@@ -1,0 +1,12 @@
+.createObservable {
+    font-family: "Fira Mono", Menlo, Monaco, "Lucida Console","Courier New", Courier, monospace;
+    line-height: 2em;
+}
+
+.createObservable li {
+    list-style-type: none;
+}
+
+.createObservable .indent {
+    text-indent: 2em;
+}

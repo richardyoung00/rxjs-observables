@@ -43,6 +43,10 @@ import { cancelImplementation } from './Cancelmplementation/cancelImplementation
 import { switchingFaillmplementation } from './SwitchingFaillmplementation/switchingFaillmplementation';
 import { switchingSuccesslmplementation } from './SwitchingSuccesslmplementation/switchingSuccesslmplementation';
 import { switchingPromises } from './SwitchingPromises/switchingPromises';
+import { createObservables } from './CreateObservables/createObservables';
+import { moreInfo } from './MoreInfo/moreInfo';
+import { operators } from './Operators/operators';
+import { thanks } from './Thanks/thanks';
 
 // Require CSS
 require("normalize.css");
@@ -128,10 +132,17 @@ export default class Presentation extends React.Component {
                 {/*switching success implementation*/}
                 {switchingSuccesslmplementation()}
 
+                {/*observable creation*/}
+                {createObservables()}
 
-                {/*make own observable*/}
+                {/*operators*/}
+                {operators()}
+
+                {/*More info*/}
+                {moreInfo()}
 
                 {/*thanks*/}
+                {thanks()}
 
             </Deck>
         );

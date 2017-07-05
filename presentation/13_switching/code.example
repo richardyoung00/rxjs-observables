@@ -1,6 +1,15 @@
-const data$ = Rx.Observable.ajax('/api/data')
-  .switchMap(data => data.response)
+const getJediButton = document.querySelector('#jediButton');
+const jedi$ = Rx.Observable.fromEvent(getJediButton, 'click')
+    .mapTo('/api/jedi');
 
-data$.subscribe(
+const getSithButton = document.querySelector('#sithButton');
+const sith$ = Rx.Observable.fromEvent(getSithButton, 'click')
+    .mapTo('/api/sith');
+
+const result$ = Rx.Observable.merge(jedi$, sith$)
+    .switchMap(path => Rx.Observable.ajax(path))
+    .map(e => e.response);
+
+result$.subscribe(
   (data) => document.querySelector('#result').innerHTML = data
 )
