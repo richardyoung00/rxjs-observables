@@ -1,0 +1,85 @@
+.switchingSuccessImplementation #result {
+    white-space: pre-wrap;
+    border: 2px solid white;
+    margin-top: 5%;
+    transition: all 0.2s;
+}
+
+.switchingSuccessImplementation button {
+    background-color: black;
+    margin: 0.5% 16%;
+}
+
+.switchingSuccessImplementation button:active {
+    background-color: white;
+    color: black;
+}
+
+.switchingSuccessImplementation .highlite {
+    background-color: white;
+    color: black;
+}
+
+.switchingSuccessImplementation .serverImage {
+    width: 10%;
+}
+
+.switchingSuccessImplementation .requests {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.switchingSuccessImplementation .jedi-requests {
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    position: relative;
+
+}
+
+.switchingSuccessImplementation .sith-requests {
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+}
+
+.switchingSuccessImplementation .list {
+    height: 100%;
+}
+
+.requestArrow {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(100%);
+    }
+    50% {
+        transform: translateY(0%)
+    }
+    100% {
+        transform: translateY(0%)
+    }
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%)
+    }
+}
+
+.requestArrow img {
+    height: 100%;
+}

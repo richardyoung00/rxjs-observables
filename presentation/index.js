@@ -39,12 +39,12 @@ import { switching } from './13_switching/switching';
 import { retry } from './14_retry/retry';
 import { throttleImplementation } from './throttleImplementation/throttleImplementation';
 import { chosenOne } from './ChosenOne/chosenOne';
-import { cancelImplementation } from './Cancelmplementation/cancelImplementation';
 import {
     switchingFaillmplementation,
-    switchingFaillmplementationcomponentDidMount
 } from './SwitchingFaillmplementation/switchingFaillmplementation';
-import { switchingSuccesslmplementation } from './SwitchingSuccesslmplementation/switchingSuccesslmplementation';
+import {
+    switchingSuccessImplementation,
+} from './SwitchingSuccesslmplementation/switchingSuccesslmplementation';
 import { switchingPromises } from './SwitchingPromises/switchingPromises';
 import { createObservables } from './CreateObservables/createObservables';
 import { moreInfo } from './MoreInfo/moreInfo';
@@ -127,13 +127,13 @@ export default class Presentation extends React.Component {
                 {switchingPromises()}
 
                 {/* 13 - switching fail implementation*/}
-                {switchingFaillmplementation(this.state)}
+                {switchingFaillmplementation()}
 
                 {/*switching code*/}
                 {switching()}
 
                 {/*switching success implementation*/}
-                {switchingSuccesslmplementation()}
+                {switchingSuccessImplementation()}
 
                 {/*observable creation*/}
                 {createObservables()}
