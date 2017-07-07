@@ -82,13 +82,13 @@ const obsComponentDidMount = () => {
             setTimeout(() => document.querySelector('#result').classList.remove("highlite"), 200);
         }
     )
-}
+};
 
 const listRenderer = (list) => {
     return (<div className='list'>
         {list.map((val) => val)}
     </div>);
-}
+};
 
 const renderJediRequests = () => {
     ReactDOM.render(listRenderer(jediRequests), document.querySelector('.jedi-requests'));
@@ -98,24 +98,12 @@ const renderSithRequests = () => {
     ReactDOM.render(listRenderer(sithRequests), document.querySelector('.sith-requests'));
 };
 
-const getJediClick = () => {
-    jediRequests.push(renderRequestArrow(Math.random(), 5));
-    renderJediRequests();
-
-};
-
-
-const getSithClick = () => {
-    sithRequests.push(renderRequestArrow(Math.random(), 0.3));
-    renderSithRequests();
-};
-
 const upArrowStyle = (time) => {
     return {
         animation: `moveUp ${time}s linear`
     }
-
 };
+
 const downArrowStyle = (time) => {
     return {animation: `moveDown ${time}s linear`};
 };

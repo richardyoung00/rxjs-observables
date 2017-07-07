@@ -1,0 +1,26 @@
+.throttle .output {
+}
+
+.throttle button {
+    background-color: black;
+    margin: 5%;
+}
+
+.throttle button:active {
+    background-color: white;
+    color: black;
+}
+
+.throttle .normal {
+    width: 50%;
+    height: 50vh;
+    display: inline-block;
+    white-space: pre-wrap;
+}
+
+.throttle .throttled {
+    width: 50%;
+    height: 50vh;
+    display: inline-block;
+    white-space: pre-wrap;
+}
