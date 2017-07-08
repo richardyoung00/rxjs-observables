@@ -1,0 +1,44 @@
+/*
+/api/jedi
+[
+    {name: 'Yoda'},
+    {name: 'Anakin Skywalker'},
+    {name: 'Obi-Wan Kenobi'}
+]
+*/
+
+$.ajax('/api/jedi')
+    .then(
+        (data) => console.log(data),
+        (err) => console.log('error', err)
+    )
+
+const jedi$ = Rx.Observable.ajax('/api/jedi')
+    .map((data) => data.response)
+    .catch((err) => Rx.Observable.of(err))
+    .finally(() => console.log('Always do this'));
+
+jedi$.subscribe(
+     jedi => console.log(jedi),
+     () => console.log('Uncaught error'),
+     () => console.log('Stream completed')
+ )
+
+const jedi$ = Rx.Observable.ajax('/api/jedi')
+    .mergeMap(e => Rx.Observable.from(e.response))
+
+jedi$.subscribe(
+     (jedi) => console.log(jedi)
+ )
+
+ const jedi$ = Rx.Observable.ajax('/api/jedi')
+     .mergeMap(e => e.response)
+     .filter(jedi => willNotBetrayTheJedi(jedi))
+
+ jedi$.subscribe(
+      (jedi) => console.log(jedi)
+  )
+
+
+
+

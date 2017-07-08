@@ -38,14 +38,16 @@ export function asyncPromise() {
 }
 
 const arrayOutput =
-`▶ {name: "Jenny", age: 30}
-▶ {name: "Bob", age: 26}`;
+`▶ {name: 'Yoda'}
+▶ {name: 'Anakin Skywalker'}
+▶ {name: 'Obi-Wan Kenobi'}`;
 
 const objectOutput =
-`▶ (2) [{…}, {…}]
-  ▶ 0: {name: "Jenny", age: 30}
-  ▶ 1: {name: "Bob", age: 26}
-     length: 2
+`▶ (3) [{…}, {…}]
+  ▶ 0: {name: 'Yoda'}
+  ▶ 1: {name: 'Anakin Skywalker'}
+  ▶ 2: {name: 'Obi-Wan Kenobi'}
+     length: 3
   ▶ __proto__: Array(0)  `;
 
 const notes = `

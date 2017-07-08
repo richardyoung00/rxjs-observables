@@ -25,31 +25,31 @@ import preloader from "spectacle/lib/utils/preloader";
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
 
-import { titleSlide } from './Title/title';
-import { aboutMeSlide } from './AboutMe/aboutMe';
-import { examplesOfAsync } from './ExamplesOfAsync/examplesOfAsync';
-import { promises } from './Promises/promises';
-import { promisesForAsync } from './PromisesForAsync/promisesForAsync';
-import { whatIsRxJsSlide } from './WhatIsRxJs/whatIsRxJs';
-import { whatAreObservables } from './WhatAreObservables/whatAreObservables';
-import { buttonClick } from './ButtonClick/buttonClick';
-import { asyncPromise } from './AsyncPromise/asyncPromise';
-import { ajaxCancellation } from './AjaxCancellation/ajaxCancellation';
-import { switching } from './Switching/switching';
-import { retry } from './Retry/retry';
-import { throttleImplementation } from './throttleImplementation/throttleImplementation';
-import { chosenOne } from './ChosenOne/chosenOne';
+import { titleSlide } from './0_Title/title';
+import { aboutMeSlide } from './1_AboutMe/aboutMe';
+import { examplesOfAsync } from './2_ExamplesOfAsync/examplesOfAsync';
+import { promises } from './7_Promises/promises';
+import { promisesForAsync } from './8_PromisesForAsync/promisesForAsync';
+import { whatIsRxJsSlide } from './3_WhatIsRxJs/whatIsRxJs';
+import { whatAreObservables } from './4_WhatAreObservables/whatAreObservables';
+import { buttonClick } from './5_ButtonClick/buttonClick';
+import { asyncPromise } from './10_AsyncPromise/asyncPromise';
+import { ajaxCancellation } from './12_AjaxCancellation/ajaxCancellation';
+import { switching } from './15_Switching/switching';
+import { retry } from './11_Retry/retry';
+import { throttleImplementation } from './6_ThrottleImplementation/throttleImplementation';
+import { chosenOne } from './9_ChosenOne/chosenOne';
 import {
     switchingFaillmplementation,
-} from './SwitchingFaillmplementation/switchingFaillmplementation';
+} from './14_SwitchingFaillmplementation/switchingFaillmplementation';
 import {
     switchingSuccessImplementation,
-} from './SwitchingSuccesslmplementation/switchingSuccesslmplementation';
-import { switchingPromises } from './SwitchingPromises/switchingPromises';
-import { createObservables } from './CreateObservables/createObservables';
-import { moreInfo } from './MoreInfo/moreInfo';
-import { operators } from './Operators/operators';
-import { thanks } from './Thanks/thanks';
+} from './16_SwitchingSuccesslmplementation/switchingSuccesslmplementation';
+import { switchingPromises } from './13_SwitchingPromises/switchingPromises';
+import { createObservables } from './17_CreateObservables/createObservables';
+import { moreInfo } from './19_MoreInfo/moreInfo';
+import { operators } from './18_Operators/operators';
+import { thanks } from './20_Thanks/thanks';
 
 // Require CSS
 require("normalize.css");
@@ -117,7 +117,7 @@ export default class Presentation extends React.Component {
                 {/* 10 - Async example*/}
                 {asyncPromise()}
 
-                {/*11 - how to retry*/}
+                {/* 11 - how to retry*/}
                 {retry()}
 
                 {/* 12 - how to do cancellation in RxJS*/}
@@ -126,25 +126,25 @@ export default class Presentation extends React.Component {
                 {/* 13 - switching with promises*/}
                 {switchingPromises()}
 
-                {/* 13 - switching fail implementation*/}
+                {/* 14 - switching fail implementation*/}
                 {switchingFaillmplementation()}
 
-                {/*switching code*/}
+                {/* 15 - switching code*/}
                 {switching()}
 
-                {/*switching success implementation*/}
+                {/* 16 - switching success implementation*/}
                 {switchingSuccessImplementation()}
 
-                {/*observable creation*/}
+                {/* 17 - observable creation*/}
                 {createObservables()}
 
-                {/*operators*/}
+                {/* 18 - operators*/}
                 {operators()}
 
-                {/*More info*/}
+                {/* 19 - More info*/}
                 {moreInfo()}
 
-                {/*thanks*/}
+                {/* 20 - thanks*/}
                 {thanks()}
 
             </Deck>
