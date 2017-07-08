@@ -1,0 +1,14 @@
+.aboutMe .logo {
+    width: 30%;
+}
+
+.aboutMe .contactLogo {
+    height: 1.5em;
+    vertical-align: middle;
+    margin-right: 0.6em !important;
+}
+
+.aboutMe .subheader {
+    margin-top: 2% !important;
+    margin-bottom: 2% !important;
+}
