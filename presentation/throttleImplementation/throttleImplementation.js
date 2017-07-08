@@ -19,6 +19,8 @@ let normalText = '';
 let throttleText = '';
 
 const componentDidMount = () => {
+    normalText = '';
+    throttleText = '';
     const normalButton = document.querySelector('#normalButton');
     const throttleButton = document.querySelector('#throttledButton');
 
