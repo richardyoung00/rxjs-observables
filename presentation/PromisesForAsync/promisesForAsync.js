@@ -10,20 +10,42 @@ import {
     Quote,
     Slide,
     Text,
+    Table,
+    TableBody,
+    TableRow,
+    TableItem
 } from "spectacle";
+import './style.css'
 
 export function promisesForAsync() {
     return (
         <Slide transition={["fade"]} notes={title_notes}>
             <Heading size={5} textColor="header">Promises for Async</Heading>
-            <List>
-                <ListItem>DOM events - multiple values</ListItem>
-                <ListItem>AJAX - 1 value</ListItem>
-                <ListItem>Animations - cancellable</ListItem>
-                <ListItem>WebSockets - multiple values</ListItem>
-                <ListItem>Server-Sent Events - multiple values</ListItem>
 
-            </List>
+            <Table className='asyncTable'>
+                <TableBody>
+                    <TableRow>
+                        <TableItem>DOM events</TableItem>
+                        <TableItem>multiple values</TableItem>
+                    </TableRow>
+                    <TableRow>
+                        <TableItem>AJAX</TableItem>
+                        <TableItem>single value</TableItem>
+                    </TableRow>
+                    <TableRow>
+                        <TableItem>Animations</TableItem>
+                        <TableItem>cancellable</TableItem>
+                    </TableRow>
+                    <TableRow>
+                        <TableItem>WebSockets</TableItem>
+                        <TableItem>multiple values</TableItem>
+                    </TableRow>
+                    <TableRow>
+                        <TableItem>Server-Sent Events</TableItem>
+                        <TableItem>multiple values</TableItem>
+                    </TableRow>
+                </TableBody>
+            </Table>
         </Slide>
     );
 }
