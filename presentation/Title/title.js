@@ -11,11 +11,14 @@ import {
     Text,
 } from "spectacle";
 
+import './style.css'
+import rxjsImage from '../../assets/rxjs.png'
+
 export function titleSlide() {
     return (
         <Slide transition={["fade"]} notes={title_notes}>
-            <Heading size={2} textColor="header">Next level async with RxJS and Observables</Heading>
-            <br/>
+            <Heading size={2} textColor="secondary">Next level async with RxJS and Observables</Heading>
+            <img src={rxjsImage} className='rxjs'/>
         </Slide>
     );
 }
