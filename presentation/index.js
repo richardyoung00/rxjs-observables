@@ -25,18 +25,18 @@ import preloader from "spectacle/lib/utils/preloader";
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
 
-import { titleSlide } from './1_title/title';
-import { aboutMeSlide } from './2_aboutMe/aboutMe';
-import { examplesOfAsync } from './3_examplesOfAsync/examplesOfAsync';
-import { promises } from './4_promises/promises';
-import { promisesForAsync } from './5_promisesForAsync/promisesForAsync';
-import { whatIsRxJsSlide } from './6_whatIsRxJs/whatIsRxJs';
-import { whatAreObservables } from './7_whatAreObservables/whatAreObservables';
-import { buttonClick } from './8_buttonClick/buttonClick';
-import { asyncPromise } from './11_asyncPromise/asyncPromise';
-import { ajaxCancellation } from './12_ajaxCancellation/ajaxCancellation';
-import { switching } from './13_switching/switching';
-import { retry } from './14_retry/retry';
+import { titleSlide } from './Title/title';
+import { aboutMeSlide } from './AboutMe/aboutMe';
+import { examplesOfAsync } from './ExamplesOfAsync/examplesOfAsync';
+import { promises } from './Promises/promises';
+import { promisesForAsync } from './PromisesForAsync/promisesForAsync';
+import { whatIsRxJsSlide } from './WhatIsRxJs/whatIsRxJs';
+import { whatAreObservables } from './WhatAreObservables/whatAreObservables';
+import { buttonClick } from './ButtonClick/buttonClick';
+import { asyncPromise } from './AsyncPromise/asyncPromise';
+import { ajaxCancellation } from './AjaxCancellation/ajaxCancellation';
+import { switching } from './Switching/switching';
+import { retry } from './Retry/retry';
 import { throttleImplementation } from './throttleImplementation/throttleImplementation';
 import { chosenOne } from './ChosenOne/chosenOne';
 import {
