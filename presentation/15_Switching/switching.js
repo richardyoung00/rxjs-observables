@@ -17,7 +17,7 @@ import CodeSlide from "spectacle-code-slide";
 export function switching() {
     return (
         <CodeSlide
-            className='codeSlide'
+            className='codeSlide switchingPromises'
             transition={['fade']}
             lang="js"
             align='flex-start flex-start'
