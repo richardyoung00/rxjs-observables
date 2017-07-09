@@ -94,8 +94,8 @@ export function switchingFaillmplementation() {
 
                 </div>
             </div>
-            <button onClick={getJediClick} id='button'>Show Jedi</button>
-            <button onClick={getSithClick} id='button'>Show Sith</button>
+            <button onClick={getJediClick} id='jedi-button'>Show Jedi</button>
+            <button onClick={getSithClick} id='sith-button'>Show Sith</button>
             <div id='result'>
                 <br/>
                 <br/>

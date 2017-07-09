@@ -7,7 +7,17 @@
 
 .switchingSuccessImplementation button {
     background-color: black;
-    margin: 0.5% 16%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+
+.switchingSuccessImplementation #jedi-button {
+    margin-right: 16%;
+}
+
+.switchingSuccessImplementation #sith-button {
+    margin-left: 16%;
 }
 
 .switchingSuccessImplementation button:active {

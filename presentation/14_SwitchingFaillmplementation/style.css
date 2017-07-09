@@ -7,7 +7,16 @@
 
 .switchingFaillmplementation button {
     background-color: black;
-    margin: 0.5% 16%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+.switchingFaillmplementation #jedi-button {
+    margin-right: 16%;
+}
+
+.switchingFaillmplementation #sith-button {
+    margin-left: 16%;
 }
 
 .switchingFaillmplementation button:active {
