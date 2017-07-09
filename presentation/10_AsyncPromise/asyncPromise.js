@@ -31,7 +31,7 @@ export function asyncPromise() {
                 {loc: [15, 25], note: objectOutput},
                 {loc: [26, 32]},
                 {loc: [26, 32], note: arrayOutput},
-                {loc: [33, 40]},
+                {loc: [33, 41]},
             ]}
         />
     );

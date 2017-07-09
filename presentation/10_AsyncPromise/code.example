@@ -34,6 +34,7 @@ jedi$.subscribe(
  const jedi$ = Rx.Observable.ajax('/api/jedi')
      .mergeMap(e => e.response)
      .filter(jedi => willNotBecomeSithLord(jedi))
+     .take(1)
 
  jedi$.subscribe(
       (jedi) => console.log(jedi)
