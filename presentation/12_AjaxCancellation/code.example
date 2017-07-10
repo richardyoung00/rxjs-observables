@@ -1,5 +1,5 @@
 const cancelBtn = document.querySelector('button');
-const cancel$ = Observable.fromEvent(cancelBtn, 'click');
+const cancel$ = Rx.Observable.fromEvent(cancelBtn, 'click');
 
 const data$ = Rx.Observable.ajax('/api/data')
     .map(e => e.response)
