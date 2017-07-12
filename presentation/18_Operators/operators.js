@@ -19,10 +19,10 @@ export function operators() {
             <Heading size={5} textColor="header">Observable Operators</Heading>
             <List>
                 <ListItem>{'🡆 .do( val => console.log(val) )'}</ListItem>
+                <ListItem>{'🡆 .toPromise()'}</ListItem>
                 <ListItem>{'🡆 .delay(1000)'}</ListItem>
                 <ListItem>{'🡆 .groupBy(person => person.age)'}</ListItem>
                 <ListItem>{'🡆 .debounce()'}</ListItem>
-                <ListItem>{'🡆 .filter()'}</ListItem>
                 <ListItem>{'🡆 .first()'}</ListItem>
                 <ListItem>{'🡆 .last()'}</ListItem>
                 <ListItem>{'🡆 ....'}</ListItem>

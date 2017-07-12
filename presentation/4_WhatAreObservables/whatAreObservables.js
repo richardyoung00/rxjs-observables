@@ -17,8 +17,8 @@ export function whatAreObservables() {
             <Heading size={5} textColor="header">Observables</Heading>
             <List>
                 <ListItem>Observable design pattern</ListItem>
-                <ListItem>Operates on streams or sets</ListItem>
-                <ListItem>Any number of events (even zero)</ListItem>
+                <ListItem>ECMAScript proposal for Observables</ListItem>
+                <ListItem>Operates on any number of events</ListItem>
                 <ListItem>Over any amount of time</ListItem>
                 <ListItem>Lazy</ListItem>
                 <ListItem>Can be unsubscribed from</ListItem>

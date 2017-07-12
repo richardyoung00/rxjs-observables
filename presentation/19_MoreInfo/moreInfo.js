@@ -17,7 +17,9 @@ export function moreInfo() {
     return (
         <Slide transition={["fade"]} notes={title_notes}>
             <Heading size={3} textColor="header">reactivex.io/rxjs</Heading>
-            <Heading size={3} textColor="header">learnrxjs.io</Heading>
+            <Heading size={3} textColor="secondary">learnrxjs.io</Heading>
+            <Heading size={3} textColor="header">rxmarbles.com</Heading>
+            <Heading size={3} textColor="secondary">rxviz.com</Heading>
         </Slide>
     );
 }

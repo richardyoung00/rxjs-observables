@@ -3,18 +3,18 @@ Rx.Observable.from([1,2,3,4])
 
 
 
-var button = document.querySelector('button');
+const button = document.querySelector('button');
 button.addEventListener('click', () => console.log('Clicked!'));
 
 
 
-var button = document.querySelector('button');
+const button = document.querySelector('button');
 Rx.Observable.fromEvent(button, 'click')
   .subscribe(() => console.log('Clicked!'));
 
 
 
-var button = document.querySelector('button');
+const button = document.querySelector('button');
 Rx.Observable.fromEvent(button, 'click')
     .throttleTime(1000)
     .subscribe(() => console.log('Clicked!'));
