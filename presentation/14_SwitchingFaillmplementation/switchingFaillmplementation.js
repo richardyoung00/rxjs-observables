@@ -50,7 +50,10 @@ const getSithClick = () => {
     getAjaxData('/api/sith', sithRequests);
 };
 
-const getAjaxData = (path, requestList) => $.ajax(path)
+const getAjaxData = (path, requestList) => $.ajax({
+    url: path,
+    cache: false
+})
     .then((data) => {
         const list = data.map((val) => val.name);
         document.querySelector('#result').innerHTML = list.join('\n')
