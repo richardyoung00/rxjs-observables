@@ -1,9 +1,9 @@
-const getJediButton = document.querySelector('#jediButton');
-const jedi$ = Rx.Observable.fromEvent(getJediButton, 'click')
+const jediBtn = document.querySelector('#jediButton');
+const jedi$ = Rx.Observable.fromEvent(jediBtn, 'click')
     .mapTo('/api/jedi');
 
-const getSithButton = document.querySelector('#sithButton');
-const sith$ = Rx.Observable.fromEvent(getSithButton, 'click')
+const sithBtn = document.querySelector('#sithButton');
+const sith$ = Rx.Observable.fromEvent(sithBtn, 'click')
     .mapTo('/api/sith');
 
 const result$ = Rx.Observable.merge(jedi$, sith$)
