@@ -11,10 +11,11 @@ import {
     Text,
     Appear
 } from "spectacle";
+import './style.css'
 
 export function promises() {
     return (
-        <Slide transition={["fade"]} notes={title_notes}>
+        <Slide transition={["fade"]} notes={title_notes} className='promises'>
             <Heading size={5} textColor="header">What about promises?</Heading>
             <Appear>
                 <List>

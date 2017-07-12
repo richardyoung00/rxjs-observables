@@ -10,29 +10,30 @@
 $.ajax('/api/jedi')
     .then(
         (data) => console.log(data),
-        (err) => console.log('error', err)
+        (err) => {/*...*/}
     )
 
 const jedi$ = Rx.Observable.ajax('/api/jedi')
-    .map((data) => data.response)
-    .catch((err) => Rx.Observable.of(err))
-    .finally(() => console.log('Always do this'));
+    .map(data => data.response)
+    .catch({/*...*/})
+    .finally({/*...*/});
 
 jedi$.subscribe(
      jedi => console.log(jedi),
-     () => console.log('Uncaught error'),
-     () => console.log('Stream completed')
+     () => {/*handle error*/},
+     () => {/*stream completed*/}
  )
 
 const jedi$ = Rx.Observable.ajax('/api/jedi')
-    .mergeMap(e => Rx.Observable.from(e.response))
+    .mergeMap(data =>
+        Rx.Observable.from(data.response))
 
 jedi$.subscribe(
      (jedi) => console.log(jedi)
  )
 
  const jedi$ = Rx.Observable.ajax('/api/jedi')
-     .mergeMap(e => e.response)
+     .mergeMap(data => data.response)
      .filter(jedi => willNotBecomeSithLord(jedi))
      .take(1)
 

@@ -30,6 +30,8 @@ export function buttonClick() {
                 {loc: [5, 7], title: "Button event"},
                 {loc: [10, 13]},
                 {loc: [16, 20]},
+                {loc: [18, 19]},
+                {loc: [16, 20]},
             ]}
         />
     );

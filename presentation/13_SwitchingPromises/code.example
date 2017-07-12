@@ -1,10 +1,8 @@
-const getJediButton = document.querySelector('#jediButton');
-getJediButton.addEventListener('click',
+document.querySelector('#jediButton').addEventListener('click',
     () => getAjaxData('/api/jedi')
 );
 
-const getSithButton = document.querySelector('#sithButton');
-getSithButton.addEventListener('click',
+document.querySelector('#sithButton').addEventListener('click',
     () => getAjaxData('/api/sith')
 );
 

@@ -8,7 +8,7 @@ const sith$ = Rx.Observable.fromEvent(getSithButton, 'click')
 
 const result$ = Rx.Observable.merge(jedi$, sith$)
     .switchMap(path => Rx.Observable.ajax(path))
-    .map(e => e.response);
+    .map(data => data.response);
 
 result$.subscribe(
   (data) => document.querySelector('#result').innerHTML = data

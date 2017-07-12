@@ -25,6 +25,10 @@ export function ajaxCancellation() {
             ranges={[
                 {loc: [0, 2], title: "Cancellation"},
                 {loc: [0, 10]},
+                {loc: [5, 6]}, //takeuntil
+                {loc: [0, 10]},
+                {loc: [11, 20]},
+                {loc: [14, 16]}, //takeuntil timeout
                 {loc: [11, 20]},
             ]}
         />

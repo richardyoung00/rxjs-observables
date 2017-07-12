@@ -25,7 +25,7 @@ export function switchingPromises() {
             code={require("raw-loader!./code.example")}
             notes={notes}
             ranges={[
-                {loc: [0, 13], title: "Multiple promises"},
+                {loc: [0, 11], title: "Multiple promises"},
             ]}
         />
     );

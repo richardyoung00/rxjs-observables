@@ -24,7 +24,10 @@ export function switching() {
             code={require("raw-loader!./code.example")}
             notes={notes}
             ranges={[
-                {loc: [0, 15], title: "SwitchMap"},
+                {loc: [0, 7], title: "SwitchMap"},
+                {loc: [8, 15]},
+                {loc: [9, 10]},
+                {loc: [8, 15]},
             ]}
         />
     );

@@ -26,7 +26,13 @@ export function retry() {
             notes={notes}
             ranges={[
                 {loc: [0, 7], title: "Retry"},
+                {loc: [2, 3]}, // retry
+                {loc: [0, 7]},
                 {loc: [8, 17]},
+                {loc: [11, 13]}, // retry and timeout
+                {loc: [8, 17]},
+                {loc: [18, 28]},
+                {loc: [21, 23]}, // retrywhen delaywhen
                 {loc: [18, 28]},
             ]}
         />
