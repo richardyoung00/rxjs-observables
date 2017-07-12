@@ -51,6 +51,8 @@ import { moreInfo } from './19_MoreInfo/moreInfo';
 import { operators } from './18_Operators/operators';
 import { thanks } from './20_Thanks/thanks';
 
+import $ from 'jquery';
+
 // Require CSS
 require("normalize.css");
 require("spectacle/lib/themes/default/index.css");
@@ -75,6 +77,32 @@ const theme = createTheme({
 });
 
 export default class Presentation extends React.Component {
+
+    componentDidMount() {
+        $(document).ready(function() {
+            var idleMouseTimer;
+            var forceMouseHide = false;
+
+            $("body").css('cursor', 'none');
+
+            $("#root").mousemove(function(ev) {
+                if(!forceMouseHide) {
+                    $("body").css('cursor', '');
+
+                    clearTimeout(idleMouseTimer);
+
+                    idleMouseTimer = setTimeout(function() {
+                        $("body").css('cursor', 'none');
+
+                        forceMouseHide = true;
+                        setTimeout(function() {
+                            forceMouseHide = false;
+                        }, 200);
+                    }, 1000);
+                }
+            });
+        });
+    }
 
     render() {
         return (
