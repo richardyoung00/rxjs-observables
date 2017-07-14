@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Fira Mono';
     src:  url('FiraMono-Regular.ttf') format('truetype'),
-    url('FiraMono-Bold.ttf') format('truetype');
+    url('FiraMono-Bold.ttf') format('truetype'),
     url('FiraMono-Medium.ttf') format('truetype');
 }
 /*
